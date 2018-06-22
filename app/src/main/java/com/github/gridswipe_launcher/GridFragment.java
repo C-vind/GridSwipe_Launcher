@@ -61,9 +61,9 @@ public class GridFragment extends Fragment {
      * have a sibling view id {@link android.R.id#empty android.R.id.empty}
      * that is to be shown when the grid is empty.
      *
-     * <p>If you are overriding this method with your own custom content,
-     * consider including the standard layout {@link android.R.layout#list_content}
-     * in your layout file, so that you continue to retain all of the standard
+     * <p>If this method is overrided with the custom content, consider including
+     * the standard layout {@link android.R.layout#list_content}
+     * in the layout file to continue in retaining all of the standard
      * behavior of ListFragment.  In particular, this is currently the only
      * way to have the built-in indeterminant progress state be shown.
      */
@@ -216,7 +216,7 @@ public class GridFragment extends Fragment {
 
     /**
      * The default content for a ListFragment has a TextView that can
-     * be shown when the grid is empty.  If you would like to have it
+     * be shown when the grid is empty.  If it is expected to be
      * shown, call this method to supply the text it should use.
      */
     public void setEmptyText(CharSequence text) {
@@ -232,8 +232,8 @@ public class GridFragment extends Fragment {
     }
 
     /**
-     * Control whether the grid is being displayed.  You can make it not
-     * displayed if you are waiting for the initial data to show in it.  During
+     * Control whether the grid is being displayed.  It is possible to make it not
+     * displayed when waiting for the initial data to show in it.  During
      * this time an indeterminant progress indicator will be shown instead.
      *
      * <p>Applications do not normally need to use this themselves.  The default
@@ -258,8 +258,8 @@ public class GridFragment extends Fragment {
     }
 
     /**
-     * Control whether the grid is being displayed.  You can make it not
-     * displayed if you are waiting for the initial data to show in it.  During
+     * Control whether the grid is being displayed.  It is possible to make it not
+     * displayed when waiting for the initial data to show in it.  During
      * this time an indeterminant progress indicator will be shown instead.
      *
      * @param shown If true, the grid view is shown; if false, the progress
